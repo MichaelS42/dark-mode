@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 // import ReactDOM from "react-dom";
 // import axios from "axios";
 
-
-
 export const useLocalStorage = (key, initialValue) => {
  
   const [storedValue, setStoredValue] = useState(() => {
@@ -21,5 +19,3 @@ export const useLocalStorage = (key, initialValue) => {
 };
 
 export default useLocalStorage;
-
-

@@ -18,6 +18,20 @@ const App = () => {
       .then(res => setCoinData(res.data))
       .catch(err => console.log(err));
   }, []);
+
+  //failed stretch
+  //   axios.all([
+  //     axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=true"),
+  //     axios.get("https://api.coingecko.com/api/v3/coins/comp?tickers=true&market_data=true")
+  //   ])
+  //   .then(axios.spread((firstRes, secondRes) => {
+  //     (res => setCoinData(res.data))
+  //   .catch(err => console.log(err));
+  //   }))
+  // }, []);
+  //failed stretch
+
+
   return (
     <div className="App">
       <Navbar />
